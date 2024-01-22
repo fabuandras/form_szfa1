@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="form_szfa1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Fabu András">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Fabu András</title>
+</head>
+<body>
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Mosómacik</legend>
+                <label for="nev">Név: </label>
+                <input type="text" id="nev" name="macinev" placeholder="Bearkenye"><br/>
+                <label for="szin">Szín: </label>
+                <input type="color" id="szin" name="maciszin"><br/>
+                <label for="tomeg">Tömeg(kg): </label>
+                <input type="range" id="tomeg" name="tomeg" min="6" max="10" oninput="this.form.tomeg.value=this.value">
+                <input type="number" name="tomeg_szam" size="3" oninput="this.form.tomeg.value=this.value"><br/>
+                <input type="submit" value="Küldés">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
